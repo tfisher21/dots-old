@@ -1,0 +1,14 @@
+[alias]
+	st = status
+	co = checkout
+	ci = commit
+	cf = !sh -c \"git diff --name-only | uniq | xargs subl -n\"
+[core]
+	editor = vim
+[user]
+	email = tyler.fisher@amount.com
+	name = Tyler Fisher
+[pager]
+	branch = false
+[grep]
+	lineNumber = true
