@@ -1,0 +1,29 @@
+if !exists("g:loaded_nvim_treesitter")
+  finish
+endif
+
+lua <<EOF
+require('nvim-treesitter.configs').setup{
+  ensure_installed = {
+    "bash",
+    "dockerfile",
+    "go",
+    "ruby",
+    "yaml",
+    "json",
+    "tsx",
+    "html",
+    "toml",
+    "css",
+  },
+  ignore_install = {},
+  highlight = {
+    enable = true,
+    disable = {},
+  },
+  indent = {
+    enable = true,
+    disable = {},
+  },
+}
+EOF
