@@ -98,25 +98,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias dc="docker-compose"
-alias dcu="docker-compose up"
-alias cdab="cd ~/code/avant-basic"
-alias cdc="cd ~/code/complaints"
-alias cdcc="cd ~/code/cards/credit-card-api"
-alias cdfdr="cd ~/code/cards/fdr_gateway"
-alias dcdcms="docker-compose run web bundle exec rake db:drop db:create db:migrate db:seed"
-alias vlogin="vault login -method=ldap -address=$VAULT_ADDR username=tfishe54"
-alias dbuild='docker build -t "$(basename $(pwd))" .'
-alias dcms="bundle exec rake db:drop db:create db:migrate db:seed"
-alias dcls="bundle exec rake db:drop db:create db:structure:load db:seed"
-alias abdbs="DATABASE_URL=postgres://fork_super_user:hhDxTsU7WuWCtOTH09WlEtInSB3EVt@avant-staging-fork.staging.amount.com:5432/deubc3pju2ki49 bundle exec rails server -p 5000"
-alias ccr="docker-compose run web bundle exec rspec"
-alias notes="vim ~/notes/"
-alias ccattach="dcu -d && docker attach credit-card-api_web_1"
-alias fdrattach='docker-compose up -d && docker attach fdr_gateway_web_1'
-alias clean="git branch | grep -v '^*' | xargs git branch -D"
-alias cdd="cd ~/code/disputes"
-alias cdpg="cd ~/code/payment-gateway"
-alias cdpp="cd ~/personal_projects"
 
 # rbenv init
 eval "$(rbenv init -)"
