@@ -1,8 +1,6 @@
 ---
 :backtrace: false
 :bulk_threshold: 1000
-:sources:
-- http://artifactory.internal.amount.com/artifactory/api/gems/gems/
 :update_sources: true
 :verbose: true
 :ssl_verify_mode: 0
