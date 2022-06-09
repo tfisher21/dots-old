@@ -39,40 +39,41 @@ if status then
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>f', '<cmd>lua vim.lsp.buf.formatting()<CR>', opts)
   end
 
-  local lsp_installer_servers = require('nvim-lsp-installer.servers')
-
-  local servers = {
-    'solargraph', -- gem install solargraph
-  }
-  
-  local server_specific_opts = {
-    ["solargraph"] = function(opts)
-      opts.settings = {
-        filetypes = { "ruby", "rake" }
-      }
-    end,
+  -- `gem install solargraph` per ruby version
+  nvim_lsp.solargraph.setup{
+    on_attach = on_attach,
+    capabilities = capabilities,
   }
 
-  for _, server_name in pairs(servers) do
-    local server_available, server = lsp_installer_servers.get_server(server_name)
-
-    if server_available then
-      server:on_ready(function()
-        local opts = {
-          on_attach = on_attach,
-        }
-
-        if server_specific_opts[server_name] then
-          server_specific_opts[server_name](opts)
-        end
-
-        server:setup(opts)
-      end)
-
-      if not server:is_installed() then
-        server:install()
-      end
-    end
-  end
+  -- go install golang.org/x/tools/gopls@latest
+  nvim_lsp.gopls.setup {
+    on_attach = on_attach,
+    capabilities = capabilities,
+    settings = {
+      gopls = {
+        semanticTokens = false,
+        usePlaceholders = true,
+        -- verboseOutput = true,
+        gofumpt = true,
+        ["local"] = "github.com/amount,github.com/natw",
+        staticcheck = true,
+        analyses = {
+          nillness = true,
+          fieldalignment = true,
+          unusedparams = true,
+          unusedwrite = true,
+        },
+        codelenses = {
+          test = true,
+          gc_details = true,
+        },
+      },
+    },
+  }
 end
+
+-- When debugging lsp logs uncomment for tail usage
+-- local lsp = require('lspconfig')
+-- vim.lsp.set_log_level("debug")
+
 EOF
