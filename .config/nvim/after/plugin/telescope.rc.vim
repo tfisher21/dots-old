@@ -1,32 +1,35 @@
-if !exists('g:loaded_telescope') | finish | endif
-
-nnoremap  <silent> <C-p> <cmd>lua require('telescope.builtin').find_files()<cr>
-nnoremap  <silent> <C-g> <cmd>lua require('telescope.builtin').live_grep()<cr>
-nnoremap <silent> \\ <cmd>Telescope buffers<cr>
-nnoremap <silent> ;; <cmd>Telescope help_tags<cr>
+if !exists("g:loaded_nvim_treesitter")
+  finish
+endif
 
 lua <<EOF
-local telescope = require('telescope')
-local actions = require('telescope.actions')
-
-telescope.setup {
-  defaults = {
-    mappings = {
-      n = {
-        ["q"] = actions.close -- when a menu pops up, press q to close in normal mode. Thanks hectron!
-
-      }
-    }
+require('nvim-treesitter.configs').setup{
+  -- list of parsers to install, pulled from officially supported list
+  -- https://github.com/nvim-treesitter/nvim-treesitter#supported-languages
+  ensure_installed = {
+    "bash",
+    "dockerfile",
+    "go",
+    "ruby",
+    "yaml",
+    "json",
+    "tsx",
+    "html",
+    "toml",
+    "css",
   },
-  extensions = {
-    fzf = {
-      fuzzy = true,                    -- false will only do exact matching
-      override_generic_sorter = true,  -- override the generic sorter
-      override_file_sorter = true,     -- override the file sorter
-      case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
-               -- the default case_mode is "smart_case"
-    }
-  }
+  ignore_install = {},
+  highlight = {
+    enable = true,
+    disable = {},
+  },
+  indent = {
+    enable = true,
+    disable = {},
+  },
+
+-- I believe this set's parsing expectations for js file to typescript. Keeping commented for now.
+-- local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
+-- parser_config.tsx.filetype_to_parsername = { "javascript", "typescript.tsx" }
 }
-telescope.load_extension('fzf')
 EOF
