@@ -5,6 +5,7 @@
 	cf = !sh -c \"git diff --name-only | uniq | xargs subl -n\"
 [core]
 	editor = vim
+	excludesfile = /Users/tylerfisher/.gitignore
 [user]
 	email = tfisher21@gmail.com
 	name = Tyler Fisher
