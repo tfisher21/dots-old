@@ -31,7 +31,6 @@ Remote Store for my personal dotfile configurations
 - [ ] Alfred - Application launcher and productivity software
 
 ## Resources
-* [Ninite](https://ninite.com/) - Install or Update Multiple Apps at Once
 * [macOS Setup Guide](https://sourabhbajaj.com/mac-setup/)
 * [Homebrew/homebrew-bundle](https://github.com/Homebrew/homebrew-bundle)
 * [Homebrew Formulae](https://formulae.brew.sh/)
