@@ -21,8 +21,8 @@ Remote Store for my personal dotfile configurations
 - [x] macOS Shortcuts
 - [x] Install [Oh My Zsh](https://ohmyz.sh/)
 
-### nVim
-- [ ] Set-up nVim
+### Neovim
+- [ ] Set-up Neovim
 
 ## Maybe
 ## Software
