@@ -6,9 +6,12 @@
 [core]
 	editor = vim
 [user]
-	email = tyler.fisher@amount.com
+	email = tfisher21@gmail.com
 	name = Tyler Fisher
 [pager]
 	branch = false
 [grep]
 	lineNumber = true
+[credential]
+	helper = osxkeychain
+
