@@ -1,7 +1,7 @@
 # Brewfile
 
-# Casks
 
+# Applications
 # Google Chrome - Web browser
 cask google-chrome
 # Discord - Voice and text chat software
@@ -24,6 +24,19 @@ cask "font-source-code-pro"
 # Git - Distributed revision control system
 brew "git"
 
+# Golang
+# go - Open source programming language to build simple/reliable/efficient software
+brew "go"
+
+# Neovim - Ambitious Vim-fork focused on extensibility and agility
+brew "neovim"
+
+# Node.js
+# node - Platform built on V8 to build network applications
+brew "node"
+# nvm - Manage multiple Node.js versions
+brew "nvm"
+
 # Ruby
 # rbenv - Ruby version manager
 brew "rbenv"
@@ -32,16 +45,7 @@ brew "rbenv-default-gems"
 # rbenv-gemset - Adds basic gemset support to rbenv
 brew "rbenv-gemset"
 
-# Node.js
-# node - Platform built on V8 to build network applications
-brew "node"
-# nvm - Manage multiple Node.js versions
-brew "nvm"
-
-# Golang
-# go - Open source programming language to build simple/reliable/efficient software
-brew "go"
-
+# NOTE: Unsure if I want or need these
 # Quick Look Plugins
 # QLColorCode - QuickLook plug-in that renders source code with syntax highlighting
 # cask qlcolorcode
