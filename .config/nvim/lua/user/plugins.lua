@@ -65,6 +65,10 @@ return packer.startup(function(use)
   -- LSP
   use "neovim/nvim-lspconfig" -- Configurations for Nvim LuaSnip
   use "williamboman/nvim-lsp-installer" -- plugin that allow you to manage LSP servers (NOTE: This has been deprecated and recommends migrating to mason.nvim)
+
+  -- Telescope
+  use "nvim-telescope/telescope.nvim" -- a highly extendable fuzzy finder over lists
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
