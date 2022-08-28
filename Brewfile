@@ -20,6 +20,7 @@ brew "homebrew/cask-fonts"
 brew "svn"
 # Font - Source Code Pro
 cask "font-source-code-pro"
+cask "font-hack-nerd-font"
 
 # Git - Distributed revision control system
 brew "git"
