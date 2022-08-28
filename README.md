@@ -33,7 +33,7 @@ created because they won't be tracked otherwise.
 - [x] Install [Oh My Zsh](https://ohmyz.sh/)
 
 ### Neovim
-- [ ] Set-up Neovim
+- [x] Set-up Neovim
 - [ ] Migrate from 'williamboman/nvim-lsp-installer' to 'williamboman/mason.nvim'
 
 ### Future Tasks
@@ -41,7 +41,7 @@ created because they won't be tracked otherwise.
 - [ ] Document System Preferences adjustments
 
 ## Maybe
-## Software
+### Software
 - [ ] RetroArch - Emulator frontend (OpenGL graphics API version)
 - [ ] Notion - App to write, plan, collaborate, and get organized
 - [ ] Alfred - Application launcher and productivity software
@@ -52,3 +52,4 @@ created because they won't be tracked otherwise.
 * [Homebrew Formulae](https://formulae.brew.sh/)
 * [Connecting to GitHub with SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
 * [The best way to store your dotfiles: A bare Git repository **EXPLAINED**](https://www.ackama.com/what-we-think/the-best-way-to-store-your-dotfiles-a-bare-git-repository-explained/)
+* [NeoVim from Scratch - chris@machine](https://www.youtube.com/playlist?list=PLhoH5vyxr6Qq41NFL4GvhFp-WLd5xzIzZ)
