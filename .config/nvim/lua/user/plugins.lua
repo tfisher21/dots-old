@@ -41,12 +41,24 @@ packer.init {
 -- Install your plugins here
 return packer.startup(function(use)
   -- My plugins here
-  use "wbthomason/packer.nvim" -- Have packer manage itself
-  use "nvim-lua/popup.nvim" -- An implementation of the Popup API from vim in Neovim
-  use "nvim-lua/plenary.nvim" -- Useful lua functions used ny lots of plugins
+  use "wbthomason/packer.nvim" --use-package inspired plugin/package management for Neovim 
+  use "nvim-lua/popup.nvim" --An implementation of the Popup API from vim in Neovim 
+  use "nvim-lua/plenary.nvim" --All the lua functions I don't want to write twice 
 
   -- Colorschemes
   use "Mofiqul/dracula.nvim" -- Dracula colorscheme for NEOVIM written in Lua
+  use 'folke/tokyonight.nvim' -- A dark and light Neovim theme written in Lua ported from the Visual Studio Code TokyoNight theme
+
+  -- cmp plugins
+  use "hrsh7th/nvim-cmp" --A completion engine plugin for neovim written in Lua
+  use "hrsh7th/cmp-buffer" -- nvim-cmp source for buffer words
+  use "hrsh7th/cmp-path" -- nvim-cmp source for filesystem paths
+  use "hrsh7th/cmp-cmdline" --nvim-cmp source for vim's cmdline 
+  use "saadparwaiz1/cmp_luasnip" --luasnip completion source for nvim-cmp 
+
+  -- snippets
+  use "L3MON4D3/LuaSnip" --snippet engine
+  use "rafamadriz/friendly-snippets" --Snippets collection for a set of different programming languages for faster development 
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
