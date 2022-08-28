@@ -55,11 +55,16 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-path" -- nvim-cmp source for filesystem paths
   use "hrsh7th/cmp-cmdline" --nvim-cmp source for vim's cmdline 
   use "saadparwaiz1/cmp_luasnip" --luasnip completion source for nvim-cmp 
+  use "hrsh7th/cmp-nvim-lsp" -- nvim-cmp source for neovim's built-in language server client
+  use "hrsh7th/cmp-nvim-lua" -- nvim-cmp source for neovim Lua API.
 
   -- snippets
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" --Snippets collection for a set of different programming languages for faster development 
 
+  -- LSP
+  use "neovim/nvim-lspconfig" -- Configurations for Nvim LuaSnip
+  use "williamboman/nvim-lsp-installer" -- plugin that allow you to manage LSP servers (NOTE: This has been deprecated and recommends migrating to mason.nvim)
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

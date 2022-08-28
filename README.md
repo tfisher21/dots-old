@@ -19,7 +19,7 @@ created because they won't be tracked otherwise.
 - [x] Update email depending on personal or professional work
 
 ### Initial
-- [ ] Adjust System Preferences
+- [x] Adjust System Preferences
 - [x] Download Xcode via the app store
 - [x] Install Xcode Command Line Interface
 - [x] Install [Homebrew](https://brew.sh/)
@@ -34,6 +34,11 @@ created because they won't be tracked otherwise.
 
 ### Neovim
 - [ ] Set-up Neovim
+- [ ] Migrate from 'williamboman/nvim-lsp-installer' to 'williamboman/mason.nvim'
+
+### Future Tasks
+- [ ] Enhance Readme as a how-to
+- [ ] Document System Preferences adjustments
 
 ## Maybe
 ## Software
