@@ -1,6 +1,17 @@
 # dots
 Remote Store for my personal dotfile configurations
 
+## Cloning and Using this repository
+This repository sets up an alias that allows us to track only our personal configuration files in the $HOME directory and store changes in Github.
+1. `echo .dots >> .gitignore`
+2. `git clone git@github.com:tfisher21/dots.git $HOME/.dots`
+3. Restart your Session
+4. `dots config --local status.showUntrackedFiles no`
+5. `dots checkout`
+
+With this setup, you'll use `dots` instead of `git` to manage your working tree for the dots repo. You'll also need to manually add new files when
+created because they won't be tracked otherwise.
+
 ## To Do
 ### GitHub
 - [x] Set-Up GitHub Access
@@ -35,3 +46,4 @@ Remote Store for my personal dotfile configurations
 * [Homebrew/homebrew-bundle](https://github.com/Homebrew/homebrew-bundle)
 * [Homebrew Formulae](https://formulae.brew.sh/)
 * [Connecting to GitHub with SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
+* [The best way to store your dotfiles: A bare Git repository **EXPLAINED**](https://www.ackama.com/what-we-think/the-best-way-to-store-your-dotfiles-a-bare-git-repository-explained/)
