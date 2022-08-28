@@ -44,6 +44,11 @@ return packer.startup(function(use)
   use "wbthomason/packer.nvim" --use-package inspired plugin/package management for Neovim 
   use "nvim-lua/popup.nvim" --An implementation of the Popup API from vim in Neovim 
   use "nvim-lua/plenary.nvim" --All the lua functions I don't want to write twice 
+  use "nvim-telescope/telescope.nvim" -- a highly extendable fuzzy finder over lists
+  use {
+   "nvim-treesitter/nvim-treesitter", -- provide a simple and easy way to use the interface for tree-sitter in Neovim 
+   run = ":TSUpdate",
+  }
 
   -- Colorschemes
   use "Mofiqul/dracula.nvim" -- Dracula colorscheme for NEOVIM written in Lua
@@ -66,8 +71,6 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig" -- Configurations for Nvim LuaSnip
   use "williamboman/nvim-lsp-installer" -- plugin that allow you to manage LSP servers (NOTE: This has been deprecated and recommends migrating to mason.nvim)
 
-  -- Telescope
-  use "nvim-telescope/telescope.nvim" -- a highly extendable fuzzy finder over lists
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
