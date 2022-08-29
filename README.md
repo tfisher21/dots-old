@@ -33,8 +33,11 @@ created because they won't be tracked otherwise.
 - [x] Install [Oh My Zsh](https://ohmyz.sh/)
 
 ### Neovim
-- [ ] Set-up Neovim
+- [x] Set-up Neovim
 - [ ] Migrate from 'williamboman/nvim-lsp-installer' to 'williamboman/mason.nvim'
+- [ ] Autotags
+- [ ] Git
+- [ ] Tmux
 
 ### Future Tasks
 - [ ] Enhance Readme as a how-to

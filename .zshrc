@@ -31,7 +31,7 @@ source $ZSH/oh-my-zsh.sh
 alias dots='/usr/bin/git --git-dir=/Users/tylerfisher/.dots/.git --work-tree=/Users/tylerfisher'
 
 # rbenv configuration
-eval #$(rbenv init -)"
+eval "$(rbenv init - zsh)"
 
 # nvm configuration
 export NVM_DIR="$HOME/.nvm"
