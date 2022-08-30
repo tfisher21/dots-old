@@ -38,6 +38,7 @@ created because they won't be tracked otherwise.
 - [ ] Autotags
 - [ ] Git
 - [ ] Tmux
+- [ ] File Explorer (currently using Lexplore, not loving it. Might mobe back to NERDTree)
 
 ### Future Tasks
 - [ ] Enhance Readme as a how-to
