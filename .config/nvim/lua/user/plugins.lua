@@ -50,6 +50,14 @@ return packer.startup(function(use)
    run = ":TSUpdate",
   }
 
+  use {
+    'kyazdani42/nvim-tree.lua', -- A File Explorer For Neovim Written In Lua
+    requires = {
+      'kyazdani42/nvim-web-devicons', -- optional, for file icons
+    },
+    tag = 'nightly' -- optional, updated every week. (see issue #1193)
+  }
+
   -- Colorschemes
   use "Mofiqul/dracula.nvim" -- Dracula colorscheme for NEOVIM written in Lua
   use 'folke/tokyonight.nvim' -- A dark and light Neovim theme written in Lua ported from the Visual Studio Code TokyoNight theme
