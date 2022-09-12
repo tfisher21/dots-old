@@ -40,23 +40,21 @@ packer.init {
 
 -- Install your plugins here
 return packer.startup(function(use)
-  -- My plugins here
   use "wbthomason/packer.nvim" --use-package inspired plugin/package management for Neovim 
-  use "nvim-lua/popup.nvim" --An implementation of the Popup API from vim in Neovim 
-  use "nvim-lua/plenary.nvim" --All the lua functions I don't want to write twice 
-  use "nvim-telescope/telescope.nvim" -- a highly extendable fuzzy finder over lists
+
   use {
    "nvim-treesitter/nvim-treesitter", -- provide a simple and easy way to use the interface for tree-sitter in Neovim 
    run = ":TSUpdate",
   }
-
+  use "nvim-lua/popup.nvim" --An implementation of the Popup API from vim in Neovim 
+  use "nvim-lua/plenary.nvim" --All the lua functions I don't want to write twice 
+  use "nvim-telescope/telescope.nvim" -- a highly extendable fuzzy finder over lists
   use {
-    'kyazdani42/nvim-tree.lua', -- A File Explorer For Neovim Written In Lua
-    requires = {
-      'kyazdani42/nvim-web-devicons', -- optional, for file icons
-    },
+    "kyazdani42/nvim-tree.lua", -- A File Explorer For Neovim Written In Lua
+    requires = {'kyazdani42/nvim-web-devicons'}, -- optional for icons
     tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
+  use "windwp/nvim-autopairs" -- A super powerful autopair plugin for Neovim that supports multiple characters.
 
   -- Colorschemes
   use "Mofiqul/dracula.nvim" -- Dracula colorscheme for NEOVIM written in Lua

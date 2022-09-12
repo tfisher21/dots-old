@@ -21,4 +21,8 @@ venv
 node_modules
 .sass-cache
 
+# Local .config files
 .dots
+.config/iterm
+.config/nvim/plugin
+
