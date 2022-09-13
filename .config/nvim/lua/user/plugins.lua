@@ -55,6 +55,7 @@ return packer.startup(function(use)
     tag = 'nightly' -- optional, updated every week. (see issue #1193)
   }
   use "windwp/nvim-autopairs" -- A super powerful autopair plugin for Neovim that supports multiple characters.
+  use "lewis6991/gitsigns.nvim" -- Super fast git decorations implemented purely in lua/teal.
 
   -- Colorschemes
   use "Mofiqul/dracula.nvim" -- Dracula colorscheme for NEOVIM written in Lua

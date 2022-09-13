@@ -35,10 +35,10 @@ created because they won't be tracked otherwise.
 ### Neovim
 - [x] Set-up Neovim
 - [ ] Migrate from 'williamboman/nvim-lsp-installer' to 'williamboman/mason.nvim'
-- [ ] Autotags
-- [ ] Git
+- [x] Autotags
+- [x] Git
 - [ ] Tmux
-- [ ] File Explorer (currently using Lexplore, not loving it. Might mobe back to NERDTree)
+- [x] File Explorer (currently using Lexplore, not loving it. Might mobe back to NERDTree)
 
 ### Future Tasks
 - [ ] Enhance Readme as a how-to
