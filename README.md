@@ -35,11 +35,13 @@ created because they won't be tracked otherwise.
 ### Neovim
 - [x] Set-up Neovim
 - [ ] Migrate from 'williamboman/nvim-lsp-installer' to 'williamboman/mason.nvim'
-- [ ] Autotags
-- [ ] Git
+- [x] Autotags
+- [x] Git
 - [ ] Tmux
 - [ ] Kitty or Alacritty instead of iTerm2
-- [ ] File Explorer (currently using Lexplore, not loving it. Might mobe back to NERDTree)
+- [x] File Explorer (currently using Lexplore, not loving it. Might move back to NERDTree)
+  - Installed NvimTree
+- [ ] Nvim Alternative for projectionist and vim-test?
 
 ### Future Tasks
 - [ ] Enhance Readme as a how-to
