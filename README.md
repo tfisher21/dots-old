@@ -38,6 +38,7 @@ created because they won't be tracked otherwise.
 - [ ] Autotags
 - [ ] Git
 - [ ] Tmux
+- [ ] Kitty or Alacritty instead of iTerm2
 - [ ] File Explorer (currently using Lexplore, not loving it. Might mobe back to NERDTree)
 
 ### Future Tasks
@@ -49,6 +50,12 @@ created because they won't be tracked otherwise.
 - [ ] RetroArch - Emulator frontend (OpenGL graphics API version)
 - [ ] Notion - App to write, plan, collaborate, and get organized
 - [ ] Alfred - Application launcher and productivity software
+
+## Inspired By
+* [jessarcher](https://github.com/jessarcher/dotfiles)
+* [hectron](https://github.com/hectron/dotfiles)
+* [natw](https://github.com/natw/dotfiles)
+* [craftzdog](https://github.com/craftzdog/dotfiles-public)
 
 ## Resources
 * [macOS Setup Guide](https://sourabhbajaj.com/mac-setup/)
