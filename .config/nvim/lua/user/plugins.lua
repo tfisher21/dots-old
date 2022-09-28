@@ -56,6 +56,7 @@ return packer.startup(function(use)
   }
   use "windwp/nvim-autopairs" -- A super powerful autopair plugin for Neovim that supports multiple characters.
   use "lewis6991/gitsigns.nvim" -- Super fast git decorations implemented purely in lua/teal.
+  use "folke/which-key.nvim" -- displays a popup with possible keybindings of the command you started typing.
 
   -- Colorschemes
   use "Mofiqul/dracula.nvim" -- Dracula colorscheme for NEOVIM written in Lua
@@ -81,7 +82,6 @@ return packer.startup(function(use)
 
   -- Notetaking
   use 'renerocksai/telekasten.nvim' -- A Neovim (lua) plugin for working with a text-based, markdown zettelkasten / wiki and mixing it with a journal, based on telescope.nvim.
-
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

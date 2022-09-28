@@ -6,9 +6,9 @@ local term_opts = { silent = true }
 local keymap = vim.api.nvim_set_keymap
 
 --Remap space as leader key
-keymap("", "\\", "<Nop>", opts)
-vim.g.mapleader = "\\"
-vim.g.maplocalleader = "\\"
+keymap("", "<Space>", "<Nop>", opts)
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 -- Modes
 --   normal_mode = "n",
@@ -24,8 +24,6 @@ keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
-
-keymap("n", "<leader>e", ":NvimTreeFindFileToggle<cr>", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize +2<CR>", opts)
@@ -62,25 +60,3 @@ keymap("t", "<C-h>", "<C-\\><C-N><C-w>h", term_opts)
 keymap("t", "<C-j>", "<C-\\><C-N><C-w>j", term_opts)
 keymap("t", "<C-k>", "<C-\\><C-N><C-w>k", term_opts)
 keymap("t", "<C-l>", "<C-\\><C-N><C-w>l", term_opts)
-
--- Telescope --
-keymap("n", "<C-p>", "<cmd>Telescope find_files<cr>", opts)
--- keymap("n", "<C-p>", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown())<cr>", opts)
-keymap("n", "<C-g>", "<cmd>Telescope live_grep<cr>", opts)
-
--- Telekasten --
-keymap("n", "<leader>zf", "<cmd>Telekasten find_notes<cr>", opts)
-keymap("n", "<leader>zd", "<cmd>Telekasten find_daily_notes<cr>", opts)
-keymap("n", "<leader>zg", "<cmd>Telekasten search_notes<cr>", opts)
-keymap("n", "<leader>zz", "<cmd>Telekasten follow_link<cr>", opts)
-keymap("n", "<leader>zd", "<cmd>Telekasten find_daily_notes<cr>", opts)
-keymap("n", "<leader>zn", "<cmd>Telekasten new_note<cr>", opts)
-keymap("n", "<leader>zy", "<cmd>Telekasten yank_notelink<cr>", opts)
-keymap("n", "<leader>zt", "<cmd>Telekasten toggle_todo<cr>", opts)
-keymap("n", "<leader>zb", "<cmd>Telekasten show_backlinks<cr>", opts)
-keymap("n", "<leader>za", "<cmd>Telekasten show_tags<cr>", opts)
--- on hesitation, bring up the panel
-keymap("n", "<leader>z", "<cmd>Telekasten<cr>", opts)
-
-keymap("i", "<leader>[", "<cmd>Telekasten insert_link<cr>", opts)
-keymap("i", "<leader>zt", "<cmd>Telekasten toggle_todo<cr>", opts)
