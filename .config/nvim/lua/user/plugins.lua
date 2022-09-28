@@ -78,6 +78,9 @@ return packer.startup(function(use)
   use "neovim/nvim-lspconfig" -- Configurations for Nvim LuaSnip
   use "williamboman/nvim-lsp-installer" -- plugin that allow you to manage LSP servers (NOTE: This has been deprecated and recommends migrating to mason.nvim)
 
+  -- Notetaking
+  use 'renerocksai/telekasten.nvim' -- A Neovim (lua) plugin for working with a text-based, markdown zettelkasten / wiki and mixing it with a journal, based on telescope.nvim.
+
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

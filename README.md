@@ -54,6 +54,12 @@ created because they won't be tracked otherwise.
 - [ ] Notion - App to write, plan, collaborate, and get organized
 - [ ] Alfred - Application launcher and productivity software
 
+## Other Areas of Exploration
+- [ ] More Go
+- [ ] Rust
+- [ ] Pub/Sub
+- [ ] More TypeScript
+
 ## Inspired By
 * [jessarcher](https://github.com/jessarcher/dotfiles)
 * [hectron](https://github.com/hectron/dotfiles)

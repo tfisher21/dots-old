@@ -68,3 +68,19 @@ keymap("n", "<C-p>", "<cmd>Telescope find_files<cr>", opts)
 -- keymap("n", "<C-p>", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown())<cr>", opts)
 keymap("n", "<C-g>", "<cmd>Telescope live_grep<cr>", opts)
 
+-- Telekasten --
+keymap("n", "<leader>zf", "<cmd>Telekasten find_notes<cr>", opts)
+keymap("n", "<leader>zd", "<cmd>Telekasten find_daily_notes<cr>", opts)
+keymap("n", "<leader>zg", "<cmd>Telekasten search_notes<cr>", opts)
+keymap("n", "<leader>zz", "<cmd>Telekasten follow_link<cr>", opts)
+keymap("n", "<leader>zd", "<cmd>Telekasten find_daily_notes<cr>", opts)
+keymap("n", "<leader>zn", "<cmd>Telekasten new_note<cr>", opts)
+keymap("n", "<leader>zy", "<cmd>Telekasten yank_notelink<cr>", opts)
+keymap("n", "<leader>zt", "<cmd>Telekasten toggle_todo<cr>", opts)
+keymap("n", "<leader>zb", "<cmd>Telekasten show_backlinks<cr>", opts)
+keymap("n", "<leader>za", "<cmd>Telekasten show_tags<cr>", opts)
+-- on hesitation, bring up the panel
+keymap("n", "<leader>z", "<cmd>Telekasten<cr>", opts)
+
+keymap("i", "<leader>[", "<cmd>Telekasten insert_link<cr>", opts)
+keymap("i", "<leader>zt", "<cmd>Telekasten toggle_todo<cr>", opts)
