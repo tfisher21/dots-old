@@ -59,7 +59,8 @@ return packer.startup(function(use)
 
   -- Colorschemes
   use "Mofiqul/dracula.nvim" -- Dracula colorscheme for NEOVIM written in Lua
-  use 'folke/tokyonight.nvim' -- A dark and light Neovim theme written in Lua ported from the Visual Studio Code TokyoNight theme
+  use "folke/tokyonight.nvim" -- A clean, dark Neovim theme written in Lua, with support for lsp, treesitter and lots of plugins
+  use { "catppuccin/nvim", as = "catppuccin" } -- Soothing pastel theme for the high-spirited!
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" --A completion engine plugin for neovim written in Lua
