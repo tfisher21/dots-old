@@ -1,8 +1,8 @@
 
 -- folke/tokyonight.nvim --
-local colorscheme = "tokyonight"
-vim.g.tokyonight_style = "night"
-vim.g.tokyonight_italic_functions = true
+-- local colorscheme = "tokyonight"
+-- vim.g.tokyonight_style = "night"
+-- vim.g.tokyonight_italic_functions = true
 --
 
 -- Mofiqul/dracula.nvim --
@@ -17,6 +17,9 @@ vim.g.tokyonight_italic_functions = true
 -- local catppuccin = require(colorscheme)
 -- catppuccin.setup({ term_colors = true })
 --
+
+-- rebelot/kanagawa.nvim --
+local colorscheme = "kanagawa"
 
 -- set colorscheme
 local status_ok, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)

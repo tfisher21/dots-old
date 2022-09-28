@@ -62,6 +62,7 @@ return packer.startup(function(use)
   use "Mofiqul/dracula.nvim" -- Dracula colorscheme for NEOVIM written in Lua
   use "folke/tokyonight.nvim" -- A clean, dark Neovim theme written in Lua, with support for lsp, treesitter and lots of plugins
   use { "catppuccin/nvim", as = "catppuccin" } -- Soothing pastel theme for the high-spirited!
+  use "rebelot/kanagawa.nvim" -- NeoVim dark colorscheme inspired by the colors of the famous painting by Katsushika Hokusai.
 
   -- cmp plugins
   use "hrsh7th/nvim-cmp" --A completion engine plugin for neovim written in Lua
