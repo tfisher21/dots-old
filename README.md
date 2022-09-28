@@ -45,6 +45,7 @@ created because they won't be tracked otherwise.
 
 ### Future Tasks
 - [ ] Enhance Readme as a how-to
+- [ ] Nightly pull/updates similar to real applications (like OhMyZsh)
 - [ ] Document System Preferences adjustments
 
 ## Maybe
