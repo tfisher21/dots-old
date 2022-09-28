@@ -45,6 +45,7 @@ created because they won't be tracked otherwise.
 
 ### Future Tasks
 - [ ] Enhance Readme as a how-to
+- [ ] Nightly pull/updates similar to real applications (like OhMyZsh)
 - [ ] Document System Preferences adjustments
 
 ## Maybe
@@ -52,6 +53,12 @@ created because they won't be tracked otherwise.
 - [ ] RetroArch - Emulator frontend (OpenGL graphics API version)
 - [ ] Notion - App to write, plan, collaborate, and get organized
 - [ ] Alfred - Application launcher and productivity software
+
+## Other Areas of Exploration
+- [ ] More Go
+- [ ] Rust
+- [ ] Pub/Sub
+- [ ] More TypeScript
 
 ## Inspired By
 * [jessarcher](https://github.com/jessarcher/dotfiles)
