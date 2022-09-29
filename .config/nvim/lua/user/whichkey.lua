@@ -3,8 +3,6 @@ if not status_ok then return end
 
 wk.setup()
 
-local opts = { cwd = "~/.config/nvim/lua/user/" }
-
 -- Telekasten --
 wk.register({
   c = {
