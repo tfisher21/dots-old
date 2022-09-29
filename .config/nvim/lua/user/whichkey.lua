@@ -3,8 +3,18 @@ if not status_ok then return end
 
 wk.setup()
 
+local opts = { cwd = "~/.config/nvim/lua/user/" }
+
 -- Telekasten --
 wk.register({
+  c = {
+    f = { "<cmd>lua require('telescope.builtin').find_files({cwd = '~/.config/nvim/lua/user' })<cr>", "Find Files" },
+    cs = { "<cmd>edit ~/.config/nvim/lua/user/colorscheme.lua<cr>", "Color Schemes" },
+    i = { "<cmd>edit ~/.config/nvim/init.lua<cr>", "Init" },
+    km = { "<cmd>edit ~/.config/nvim/lua/user/keymaps.lua<cr>", "whichkey" },
+    p = { "<cmd>edit ~/.config/nvim/lua/user/plugins.lua<cr>", "Plugins" },
+    wk = { "<cmd>edit ~/.config/nvim/lua/user/whichkey.lua<cr>", "whichkey" },
+  },
   e = { "<cmd>NvimTreeFindFileToggle<cr>", "NvimTree Toggle" },
   f = {
     name = "Files",
