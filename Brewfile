@@ -46,6 +46,12 @@ brew "rbenv-default-gems"
 # rbenv-gemset - Adds basic gemset support to rbenv
 brew "rbenv-gemset"
 
+# Tmux
+# Terminal multiplexor
+brew 'tmux'
+# Manage complex tmux sessions easily
+brew 'tmuxinator'
+
 # NOTE: Unsure if I want or need these
 # Quick Look Plugins
 # QLColorCode - QuickLook plug-in that renders source code with syntax highlighting

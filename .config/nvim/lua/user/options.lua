@@ -34,6 +34,8 @@ local options = {
   scrolloff = 8,                           -- is one of my fav
   sidescrolloff = 8,
   guifont = "monospace:h17",               -- the font used in graphical neovim applications
+  -- foldmethod = "expr",                  -- TODO: currently auto-closes. Need to look into this
+  -- foldexpr = "nvim_treesitter#foldexpr()",
 }
 
 for k, v in pairs(options) do

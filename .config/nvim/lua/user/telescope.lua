@@ -92,5 +92,10 @@ telescope.setup {
     --   extension_config_key = value,
     -- }
     -- please take a look at the readme of the extension you want to configure
+    project = {
+      base_dirs = { '~/projects/' },
+    },
   },
 }
+
+telescope.load_extension('project')

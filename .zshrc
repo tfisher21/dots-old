@@ -29,6 +29,8 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 alias dots='/usr/bin/git --git-dir=/Users/tylerfisher/.dots/.git --work-tree=/Users/tylerfisher'
+alias notes='nvim +"Telekasten panel"'
+alias projects='nvim +"Telescope project"'
 
 # rbenv configuration
 eval "$(rbenv init - zsh)"

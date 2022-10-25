@@ -41,14 +41,12 @@ packer.init {
 -- Install your plugins here
 return packer.startup(function(use)
   use "wbthomason/packer.nvim" --use-package inspired plugin/package management for Neovim 
-
   use {
    "nvim-treesitter/nvim-treesitter", -- provide a simple and easy way to use the interface for tree-sitter in Neovim 
    run = ":TSUpdate",
   }
   use "nvim-lua/popup.nvim" --An implementation of the Popup API from vim in Neovim 
   use "nvim-lua/plenary.nvim" --All the lua functions I don't want to write twice 
-  use "nvim-telescope/telescope.nvim" -- a highly extendable fuzzy finder over lists
   use {
     "kyazdani42/nvim-tree.lua", -- A File Explorer For Neovim Written In Lua
     requires = {'kyazdani42/nvim-web-devicons'}, -- optional for icons
@@ -64,7 +62,7 @@ return packer.startup(function(use)
   use { "catppuccin/nvim", as = "catppuccin" } -- Soothing pastel theme for the high-spirited!
   use "rebelot/kanagawa.nvim" -- NeoVim dark colorscheme inspired by the colors of the famous painting by Katsushika Hokusai.
 
-  -- cmp plugins
+  -- CMP --
   use "hrsh7th/nvim-cmp" --A completion engine plugin for neovim written in Lua
   use "hrsh7th/cmp-buffer" -- nvim-cmp source for buffer words
   use "hrsh7th/cmp-path" -- nvim-cmp source for filesystem paths
@@ -73,16 +71,20 @@ return packer.startup(function(use)
   use "hrsh7th/cmp-nvim-lsp" -- nvim-cmp source for neovim's built-in language server client
   use "hrsh7th/cmp-nvim-lua" -- nvim-cmp source for neovim Lua API.
 
-  -- snippets
+  -- snippets --
   use "L3MON4D3/LuaSnip" --snippet engine
   use "rafamadriz/friendly-snippets" --Snippets collection for a set of different programming languages for faster development 
 
-  -- LSP
+  -- LSP --
   use "neovim/nvim-lspconfig" -- Configurations for Nvim LuaSnip
   use "williamboman/nvim-lsp-installer" -- plugin that allow you to manage LSP servers (NOTE: This has been deprecated and recommends migrating to mason.nvim)
 
-  -- Notetaking
+  -- Notetaking --
   use 'renerocksai/telekasten.nvim' -- A Neovim (lua) plugin for working with a text-based, markdown zettelkasten / wiki and mixing it with a journal, based on telescope.nvim.
+
+  -- Telescope --
+  use "nvim-telescope/telescope.nvim" -- a highly extendable fuzzy finder over lists
+  use "nvim-telescope/telescope-project.nvim" -- An extension for telescope.nvim that allows you to switch between projects.
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
