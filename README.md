@@ -59,6 +59,8 @@ created because they won't be tracked otherwise.
 - [ ] Rust
 - [ ] Pub/Sub
 - [ ] More TypeScript
+- [ ] https://guide.elm-lang.org/architecture/
+= [ ] charm.sh
 
 ## Inspired By
 * [jessarcher](https://github.com/jessarcher/dotfiles)

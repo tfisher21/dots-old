@@ -4,7 +4,7 @@
 	ci = commit
 	cf = !sh -c \"git diff --name-only | uniq | xargs subl -n\"
 [core]
-	editor = vim
+	editor = nvim
 	excludesfile = /Users/tylerfisher/.gitignore
 [user]
 	email = tfisher21@gmail.com
