@@ -31,16 +31,17 @@ created because they won't be tracked otherwise.
 - [x] Set Font to Source Code Pro
 - [x] macOS Shortcuts
 - [x] Install [Oh My Zsh](https://ohmyz.sh/)
+- [x] Install [Powerlevel10k](https://github.com/romkatv/powerlevel10k)
+- [x] Install [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md#oh-my-zsh) plugin
+- [x] Install [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md) plugin
 
 ### Neovim
 - [x] Set-up Neovim
-- [ ] Migrate from 'williamboman/nvim-lsp-installer' to 'williamboman/mason.nvim'
+- [x] Migrate from 'williamboman/nvim-lsp-installer' to 'williamboman/mason.nvim'
 - [x] Autotags
 - [x] Git
-- [ ] Tmux
-- [ ] Kitty or Alacritty instead of iTerm2
-- [x] File Explorer (currently using Lexplore, not loving it. Might move back to NERDTree)
-  - Installed NvimTree
+- [x] Tmux
+- [x] Install NvimTree
 - [ ] Nvim Alternative for projectionist and vim-test?
 
 ### Future Tasks
