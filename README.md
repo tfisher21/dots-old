@@ -67,6 +67,7 @@ created because they won't be tracked otherwise.
 * [hectron](https://github.com/hectron/dotfiles)
 * [natw](https://github.com/natw/dotfiles)
 * [craftzdog](https://github.com/craftzdog/dotfiles-public)
+* [josean-dev](https://github.com/josean-dev/dev-environment-files)
 
 ## Resources
 * [macOS Setup Guide](https://sourabhbajaj.com/mac-setup/)
