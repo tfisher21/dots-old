@@ -1,15 +1,19 @@
-require "user.autopairs"
-require "user.colorscheme"
-require "user.cmp"
-require "user.keymaps"
--- require "user.lsp"
-require "user.mason" -- TODO: Restructure what we're doing here
-require "user.null-ls"
-require "user.nvim-tree"
-require "user.options"
-require "user.plugins"
-require "user.telescope"
-require "user.treesitter"
-require "user.gitsigns"
-require "user.telekasten"
-require "user.whichkey"
+require("user.plugins-setup")
+
+require("user.core.options")
+require("user.core.colorscheme")
+require("user.core.keymaps")
+
+require("user.plugins.comment")
+require("user.plugins.nvim-tree")
+require("user.plugins.lualine")
+require("user.plugins.telescope")
+require("user.plugins.nvim-cmp")
+require("user.plugins.autopairs")
+require("user.plugins.treesitter")
+require("user.plugins.gitsigns")
+
+require("user.plugins.lsp.mason")
+require("user.plugins.lsp.lspsaga")
+require("user.plugins.lsp.lspconfig")
+require("user.plugins.lsp.null-ls")
