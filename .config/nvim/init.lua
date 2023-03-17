@@ -12,6 +12,7 @@ require("user.plugins.nvim-cmp")
 require("user.plugins.autopairs")
 require("user.plugins.treesitter")
 require("user.plugins.gitsigns")
+require("user.plugins.whichkey")
 
 require("user.plugins.lsp.mason")
 require("user.plugins.lsp.lspsaga")
