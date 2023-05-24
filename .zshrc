@@ -78,6 +78,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+  asdf
   git
   zsh-autosuggestions
   zsh-syntax-highlighting
@@ -125,12 +126,10 @@ alias dots='/usr/bin/git --git-dir=/Users/tylerfisher/.dots/.git --work-tree=/Us
 alias notes='nvim +"Telekasten panel"'
 alias projects='nvim +"Telescope project"'
 
-# rbenv configuration
-eval "$(rbenv init - zsh)"
-
-# nvm configuration
-export NVM_DIR="$HOME/.nvm"
-[ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
-
 export PATH="$HOME/bin:$PATH"
+
+# Molecule
+export PATH=$PATH:/Users/tylerfisher/Molecule/kubernetes-molecule/bin
+export KUBEDIR=/Users/tylerfisher/Molecule/kubernetes-molecule
+export KOPS_STATE_STORE=s3://molecule-kops-config
+export GEMFURY_ACCESS_TOKEN=Jo76v3qETjeehCK4Z3mV	
