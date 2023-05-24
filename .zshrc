@@ -127,9 +127,3 @@ alias notes='nvim +"Telekasten panel"'
 alias projects='nvim +"Telescope project"'
 
 export PATH="$HOME/bin:$PATH"
-
-# Molecule
-export PATH=$PATH:/Users/tylerfisher/Molecule/kubernetes-molecule/bin
-export KUBEDIR=/Users/tylerfisher/Molecule/kubernetes-molecule
-export KOPS_STATE_STORE=s3://molecule-kops-config
-export GEMFURY_ACCESS_TOKEN=Jo76v3qETjeehCK4Z3mV	
