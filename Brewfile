@@ -1,20 +1,23 @@
 # Brewfile
 
-
 # Applications
 # Google Chrome - Web browser
-cask google-chrome
+cask "google-chrome"
 # Discord - Voice and text chat software
-cask discord
+cask "discord"
 # iTerm2 - macOS Terminmal Replacement
 cask "iterm2"
 # Docker - Pack, ship and run any application as a lightweight container
 cask "docker"
 # Rectangle - Move and resize windows in macOS using keyboard shortcuts or snap areas
 cask "rectangle"
+# Notion - App to write, plan, collaborate, and get organized
+cask "notion"
+# Slack - Team communication and collaboration software
+cask "slack"
 
 # Fonts
-brew "homebrew/cask-fonts"
+tap "homebrew/cask-fonts"
 # subversion - Version control system designed to be a better CVS
 # (required for the font installation)
 brew "svn"
@@ -32,19 +35,8 @@ brew "go"
 # Neovim - Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 
-# Node.js
-# node - Platform built on V8 to build network applications
-brew "node"
-# nvm - Manage multiple Node.js versions
-brew "nvm"
-
-# Ruby
-# rbenv - Ruby version manager
-brew "rbenv"
-# rbenv-default-gems - Auto-installs gems for Ruby installs
-brew "rbenv-default-gems"
-# rbenv-gemset - Adds basic gemset support to rbenv
-brew "rbenv-gemset"
+# asdf - Manage multiple runtime versions with a single CLI tool
+brew "asdf"
 
 # Tmux
 # Terminal multiplexor
