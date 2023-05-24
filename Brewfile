@@ -15,6 +15,8 @@ cask "rectangle"
 cask "notion"
 # Slack - Team communication and collaboration software
 cask "slack"
+# 1Password - Password manager that keeps all passwords secure behind one password
+cask "1password"
 
 # Fonts
 tap "homebrew/cask-fonts"
