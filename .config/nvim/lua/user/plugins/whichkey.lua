@@ -36,4 +36,6 @@ wk.register({
 		y = { "<cmd>Telekasten yank_notelink<cr>", "Yank Notelink" },
 		z = { "<cmd>Telekasten find_daily_notes<cr>", "Find Daily Notes" },
 	},
+	w = { "<cmd>wincmd w<cr>", "Move cursor to next window" },
+	W = { "<cmd>wincmd W<cr>", "Move cursor to next window" },
 }, { prefix = "<leader>" })

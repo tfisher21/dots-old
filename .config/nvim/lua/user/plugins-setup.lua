@@ -94,6 +94,8 @@ return packer.startup(function(use)
 	-- Formatting & Linting
 	use({ "jose-elias-alvarez/null-ls.nvim" })
 	use({ "jayp0521/mason-null-ls.nvim" })
+	-- GitHub Copilot
+	use({ "github/copilot.vim" })
 
 	-- Treesitter --
 	-- Nvim Treesitter configurations and abstraction layer (Will fail upon first installation attempt)
@@ -108,6 +110,9 @@ return packer.startup(function(use)
 
 	-- Create key bindings that stick.
 	use({ "folke/which-key.nvim" })
+
+	-- A Neovim wrapper for running tests
+	use({ "klen/nvim-test" })
 
 	-- Packages to try later --
 	-- tmux & split window navigation
